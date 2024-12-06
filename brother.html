@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Under Paragraph</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+    .paragraph {
+      text-align: justify;
+      font-size: larger;
+      color: black;
+      padding: 10px;
+    }
+    .image {
+      margin-top: 15px;
+      text-align: center;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="paragraph">
+      <p>
+        WE ARE BROTHER NO ONE CAN BEAT US.
+      </p>
+    </div>
+    <div class="image">
+      <img src="https://assets.onecompiler.app/4325t725n/4325t7qwz/1000042026.jpg" alt="Placeholder Image">
+    </div>
+  </div>
+  <script>
+    // JavaScript to dynamically change the image
+    document.querySelector('.image img').addEventListener('click', () => {
+      alert('Image clicked!');
+    });
+  </script>
+</body>
+</html>
